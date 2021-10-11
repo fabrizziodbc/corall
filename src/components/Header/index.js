@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import "./style.scss";
 const Header = () => {
   const [visibility, setVisibility] = useState("");
@@ -10,30 +11,30 @@ const Header = () => {
       <header className="header">
         <div className="header__background transparent"></div>
         <div className="header__content">
-          <a href="#home" className="header__logo">
+          <Link to="/">
            <span className="header__logo-img" ></span>
-          </a>
+          </Link>
           <span className="header__hamburguer " onClick={toggleVisibility}>
             &equiv;
           </span>
         </div>
       </header>
-      <section className={`menu_full ${visibility}`}>
+      <section className={`menu_full ${visibility}`} onClick={toggleVisibility}>
         <ul className="menu_full__links">
           <li>
-            <a href="#home">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="#about">Conócenos</a>
+            <Link to="/conocenos">Conócenos</Link>
           </li>
           <li>
-            <a href="#solutions">Soluciones</a>
+            <Link to="/soluciones">Soluciones</Link>
           </li>
           <li>
-            <a href="#consultancies">Asesorías</a>
+            <Link to="/asesorias">Asesorías</Link>
           </li>
           <li>
-            <a href="#contact">Contáctanos</a>
+            <Link to="/contacto">Contáctanos</Link>
           </li>
         </ul>
       </section>

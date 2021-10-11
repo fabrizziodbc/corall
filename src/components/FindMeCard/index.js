@@ -1,5 +1,4 @@
 import "./style.scss";
-import { FaPhoneAlt } from "react-icons/fa";
 const FindMeCard = (props) => {
   return (
     <div className="FindMeCard">
