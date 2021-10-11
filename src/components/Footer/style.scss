@@ -1,0 +1,19 @@
+.Footer{
+    height: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    &__logo{
+        color: var(--color-background);
+        font-size: var(--font-size-title);
+        font-weight: bolder;
+        margin-bottom: 12px;
+    }
+    &__copyright{
+        color: var(--color-background);
+        font-size: var(--font-size-error);
+    }
+}

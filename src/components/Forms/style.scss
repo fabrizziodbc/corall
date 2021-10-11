@@ -1,0 +1,42 @@
+.form_title{
+  padding: 76px 32px 4px 32px;
+  text-align: center;
+  font-size: var(--font-size-subtitle);
+}
+.form {
+  padding: 4px 32px 16px 32px;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  input {
+    font-size: var(--font-size-input);
+    border-radius: 5px;
+    border: none;
+    padding: 4px 8px;
+    height: 32px;
+    min-width: 300px;
+    max-width: 320px;
+  }
+  .message_form{
+      height: 120px;
+      padding-bottom: 92px;
+  }
+  .form_button{
+    width: 300px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-4);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: var(--font-size-text);
+  }
+  .errors{
+    color: red;
+    padding: 4px 8px;
+    font-size: var(--font-size-error);
+  }
+}

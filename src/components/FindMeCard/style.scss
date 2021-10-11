@@ -1,0 +1,29 @@
+.FindMeCard {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    width: 52px;
+    height: 52px;
+    font-size: var(--font-size-title);
+    
+    margin-right: 20px;
+  }
+  &__title {
+    width: 150px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: var(--font-size-text);
+    margin-bottom: 8px;
+  }
+  &__content {
+    width: 150px;
+    font-size: var(--font-size-contact-icon);
+    text-align: center;
+  }
+}

@@ -1,0 +1,36 @@
+:root {
+    --color-background: #f5f5f5;
+    --color-secondary: #a31523;
+    --color-primary: #524437;
+    --color-text: #8e8e8e;
+    --color-3: #bdaa8c;
+    --color-4: #e8b110;
+
+    --font__Book-Antiqua: arial;
+  
+    --font-size-icon: 5rem;
+    --font-size-title: 3rem;
+    --font-size-subtitle: 2.4rem;
+    --font-size-text: 2rem;
+    --font-size-input: 1.6rem;
+    --font-size-contact-icon: 1.5rem;
+    --font-size-error: 1.3rem;
+    --font-size--tiny: 1rem;
+  }
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    font-size: 62.5%;
+  }
+  body {
+    font-family: var(--font__Book-Antiqua);
+    height: 100%;
+    background-color: var(--color-background);
+    color: var(--color-primary);
+  }
+  .hide{
+    display: none
+  }

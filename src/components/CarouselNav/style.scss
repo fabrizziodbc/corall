@@ -1,0 +1,35 @@
+.CarouselNav {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+}
+.CarouselNav__arrows {
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-title);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  color: var(--color-background);
+  z-index: 2;
+}
+.CarouselNav__dots {
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 16px;
+  width: 60%;
+  z-index: 2;
+  font-size: var(--font-size-title);
+}
+.CarouselNav__dot:hover {
+  color: var(--color-background);
+  font-size: var(--font-size-title);
+}
