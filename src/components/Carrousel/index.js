@@ -7,7 +7,7 @@ const Carrousel = () => {
     <div className="carrousel-container">
       <Carousel>
         {slideInfo.map(e=>(
-          <Carousel.Item interval={1000}>
+          <Carousel.Item interval={1500}>
           <span className={`d-block w-100 slide ${e.style}`} />
           <Carousel.Caption>
             <Slide
