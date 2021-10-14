@@ -13,6 +13,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      height: 60px;
     }
     a {
       color: var(--color-primary);
@@ -32,6 +33,7 @@
     &__hamburguer {
       font-size: var(--font-size-icon);
       color: var(--color-primary);
+      height: 90px;
     }
   }
   .menu_full {

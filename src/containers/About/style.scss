@@ -1,0 +1,50 @@
+.quienes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.valores {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 16px;
+  .values__icon {
+    font-size: var(--font-size-icon);
+    text-align: center;
+  }
+  .values__name {
+    font-size: var(--font-size-input);
+    text-align: center;
+    font-weight: bold;
+  }
+}
+
+.how {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  .about__how {
+    display: inline-block;
+    width: 80vw;
+    height: 200px;
+    background-image: url("../../assets/design-722d6580-c1c0-40a3-a5fe-c02120373188.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

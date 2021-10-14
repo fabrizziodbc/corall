@@ -1,0 +1,49 @@
+.card__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  margin: 16px;
+}
+.card__description {
+  width: 240px;
+  text-align: center;
+  margin: 8px 0;
+  font-size: var(--font-size-input);
+  font-weight: bold;
+}
+.card__button {
+    width: 240px;
+    height: 40px;
+    color: var(--color-background);
+    background-color: var(--color-4);
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    font-size: var(--font-size-text);
+
+}
+.card__name {
+  height: 60px;
+  width: 240px;
+  display: inline-block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.WASHSENSE {
+  background-image: url("../../assets/washsense.png");
+}
+.TWARM {
+  background-image: url("../../assets/twarm.png");
+}
+.OCTOSCAN {
+  background-image: url("../../assets/octoscan.png");
+}
+.DYNASENSE {
+  background-image: url("../../assets/dynasense.png");
+}
+.TIAGO {
+  background-image: url("../../assets/dynasense.png");
+}

@@ -1,13 +1,13 @@
 import React, { useState } from "react";
 import { Loading } from "../../components/Loading";
-import { Carousel } from "../../components/Carousel";
+import { Carrousel } from "../../components/Carrousel";
 import { Contact } from "../Contact";
 import { Layout } from "../../components/Layout";
 const Home = () => {
   return (
     <>
       {/*  <Loading /> */}
-      <Carousel />
+      <Carrousel />
       <Contact />
     </>
   );

@@ -1,61 +1,50 @@
+import { InforCard } from "../../components/InfoCard";
 import { Portada } from "../../components/Portada";
-
+import { Values } from "../../components/Values";
+import { aboutInfo } from "./aboutInfo";
+import { valuesInfo } from "./valuesInfo";
+import "./style.scss"
 const About = () => {
   const coverIMG =
     "https://images.pexels.com/photos/1906795/pexels-photo-1906795.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260";
-  const quienesImg = "";
   return (
     <>
       <Portada coverLink={coverIMG} title="Conócenos" />
       <div className="quienes">
-        <p className="about__title">¿QUIÉNES SOMOS?</p>
-        <p className="about__subtitle">
-          Empresa liberteña dedicada a la{" "}
-          <strong>
-            investigación y desarrollo de módulos electrónicos innovadores para
-            la industria 4.0 aplicando IoT e IA
-          </strong>{" "}
-          para monitorear y controlar multivariables.
-        </p>
-        <img url={quienesImg} className="about__img" />
+        <InforCard
+          title={aboutInfo[0].title}
+          content={aboutInfo[0].content}
+          img={aboutInfo[0].img}
+        />
       </div>
       <div className="mision">
-        <p className="about__title">Misión</p>
-        <p className="about__subtitle">
-          Nos esforzamos en{" "}
-          <strong>desarrollar dispositivos inteligentes</strong>, con el fin de
-          brindar a nuestros clientes una mejor calidad y estilo de vida.
-        </p>
-        </div>
-        <div className="vision">
-        <p className="about__title">Visión</p>
-        <p className="about__subtitle">
-          Haciendo <strong>foco en la investigación e innovación</strong>
-          desarrollando dispositivos de calidad con un soporte rápido y
-          eficiente....
-        </p>
+        <InforCard
+          title={aboutInfo[1].title}
+          content={aboutInfo[1].content}
+          img={aboutInfo[1].img}
+        />
+      </div>
+      <div className="vision">
+        <InforCard
+          title={aboutInfo[2].title}
+          content={aboutInfo[2].content}
+          img={aboutInfo[2].img}
+        />
       </div>
       <div className="valores">
         <p className="about__title">Valores</p>
-        <ul>
-          <li>Calidad del producto</li>
-          <li>Desarrollo ágil</li>
-          <li>Innovación</li>
-          <li>Compromiso</li>
-          <li>Comunicación efectiva</li>
-          <li>Kaizen</li>
-        </ul>
+        <Values>
+          {valuesInfo.map((e) => (
+            <li className="values__item">
+              <p className="values__icon">{e.icon}</p>
+              <p className="values__name">{e.value}</p>
+            </li>
+          ))}
+        </Values>
       </div>
       <div className="how">
         <p className="about__title">¿Cómo lo hacemos?</p>
-        <p className="about__subltitle">
-          <ol>
-            <li>Escuchamos tu problema</li>
-            <li>Aterrorizamos tu solución</li>
-            <li>Lanzamos un piloto</li>
-            <li>Validamos el producto</li>
-          </ol>
-        </p>
+        <span className="about__how"/>
       </div>
     </>
   );
