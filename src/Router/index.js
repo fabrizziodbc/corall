@@ -5,9 +5,11 @@ import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import { Layout } from "../components/Layout";
 import { Solutions } from "../containers/Solutions";
 import ScrollToTop from "../components/ScrollToTop";
+import { Loading } from "../components/Loading";
 
 const Router = () => (
   <BrowserRouter>
+    <Loading/>
     <ScrollToTop />
     <Layout>
       <Switch>
