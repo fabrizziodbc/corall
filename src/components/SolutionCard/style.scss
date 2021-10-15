@@ -36,7 +36,9 @@
     border-radius: 5px;
     font-weight: bolder;
     font-size: var(--font-size-text);
-
+}
+.card__button:hover {
+  background-color: var(--color-4-hover);
 }
 .card__name {
   height: 60px;

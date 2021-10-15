@@ -1,4 +1,3 @@
-
 .slide {
   display: flex;
   flex-direction: column;
@@ -18,8 +17,6 @@
   &__title-b {
     font-size: var(--font-size-big);
     width: 600px;
-
-  
   }
   &__button {
     width: 190px;
@@ -36,6 +33,12 @@
   }
   &__button1 {
     background-color: var(--color-secondary);
+  }
+  &__button:hover {
+    background-color: var(--color-4);
+  }
+  &__button1:hover {
+    background-color: transparent;
   }
   &__button-b {
     width: 280px;

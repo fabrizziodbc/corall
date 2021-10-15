@@ -34,6 +34,9 @@
     font-weight: bolder;
     font-size: var(--font-size-text);
   }
+  .form_button:hover{
+    background-color: var(--color-4-hover);
+  }
   .errors{
     color: red;
     padding: 4px 8px;
