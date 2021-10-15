@@ -1,12 +1,17 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { withRouter, Link } from "react-router-dom";
 import { Mobile } from "../../mediaQueries/Mobile";
 import { NotMobile } from "../../mediaQueries/NotMobile";
 import "./style.scss";
-const Header = () => {
+const Header = ({ history }) => {
   const [visibility, setVisibility] = useState("");
   const toggleVisibility = () => {
     setVisibility(visibility === "" ? "showRight" : "");
+  };
+  const getColor = (curr) => {
+    if (history.location.pathname === curr) {
+      return "var(--color-secondary)";
+    }
   };
   return (
     <>
@@ -25,19 +30,22 @@ const Header = () => {
           <NotMobile>
             <div className="menu__container">
               <ul className="menu__list">
-                <Link to="/">
+                <Link to="/" style={{ color: getColor("/") }}>
                   <li className="menu__item">Inicio</li>
                 </Link>
-                <Link to="/conocenos">
+                <Link to="/conocenos" style={{ color: getColor("/conocenos") }}>
                   <li className="menu__item">Conócenos</li>
                 </Link>
-                <Link to="/soluciones">
+                <Link
+                  to="/soluciones"
+                  style={{ color: getColor("/soluciones") }}
+                >
                   <li className="menu__item">Soluciones</li>
                 </Link>
-                <Link to="/asesorias">
+                <Link to="/asesorias" style={{ color: getColor("/asesorias") }}>
                   <li className="menu__item">Asesorías</li>
                 </Link>
-                <Link to="/contacto">
+                <Link to="/contacto" style={{ color: getColor("/contacto") }}>
                   <li className="menu__item">Contáctanos</li>
                 </Link>
               </ul>
@@ -67,4 +75,4 @@ const Header = () => {
     </>
   );
 };
-export { Header };
+export default withRouter(Header);
