@@ -10,32 +10,22 @@ const About = () => {
   return (
     <>
       <Portada coverLink={coverIMG} title="Conócenos" />
-      <div className="quienes">
+      {aboutInfo.map(e=> (
+        <div className={e.class} key={e.title}>
         <InforCard
-          title={aboutInfo[0].title}
-          content={aboutInfo[0].content}
-          img={aboutInfo[0].img}
+        
+          title={e.title}
+          content={e.content}
+          img={e.img}
         />
       </div>
-      <div className="mision">
-        <InforCard
-          title={aboutInfo[1].title}
-          content={aboutInfo[1].content}
-          img={aboutInfo[1].img}
-        />
-      </div>
-      <div className="vision">
-        <InforCard
-          title={aboutInfo[2].title}
-          content={aboutInfo[2].content}
-          img={aboutInfo[2].img}
-        />
-      </div>
+      ))}
+      
       <div className="valores">
         <p className="about__title">Valores</p>
         <Values>
           {valuesInfo.map((e) => (
-            <li className="values__item">
+            <li className="values__item" key={e.value}>
               <p className="values__icon">{e.icon}</p>
               <p className="values__name">{e.value}</p>
             </li>

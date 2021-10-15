@@ -6,20 +6,19 @@ const Carrousel = () => {
   return (
     <div className="carrousel-container">
       <Carousel>
-        {slideInfo.map(e=>(
-          <Carousel.Item interval={1500}>
-          <span className={`d-block w-100 slide ${e.style}`} />
-          <Carousel.Caption>
-            <Slide
-              title={e.title}
-              button1={e.button1}
-              button2={e.button2}
-            />
-          </Carousel.Caption>
-        </Carousel.Item>
+        {slideInfo.map((e) => (
+          <Carousel.Item interval={1500} key={e.title}>
+            <span className={`d-block w-100 slide ${e.style}`} />
+            <Carousel.Caption>
+              <Slide
+                
+                title={e.title}
+                button1={e.button1}
+                button2={e.button2}
+              />
+            </Carousel.Caption>
+          </Carousel.Item>
         ))}
-        
-
       </Carousel>
     </div>
   );

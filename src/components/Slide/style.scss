@@ -8,12 +8,18 @@
   color: var(--color-background);
 
   &__title {
-    padding: 0 36px;
     font-size: var(--font-size-subtitle);
     font-weight: bolder;
+    width: 210px;
     margin: 16px 0;
     text-align: center;
     z-index: 2;
+  }
+  &__title-b {
+    font-size: var(--font-size-big);
+    width: 600px;
+
+  
   }
   &__button {
     width: 190px;
@@ -30,5 +36,10 @@
   }
   &__button1 {
     background-color: var(--color-secondary);
+  }
+  &__button-b {
+    width: 280px;
+    height: 50px;
+    font-size: var(--font-size-text);
   }
 }

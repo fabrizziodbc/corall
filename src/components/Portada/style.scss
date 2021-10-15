@@ -37,4 +37,8 @@
     text-align: center;
     z-index: 4;
   }
+  &__title-b {
+    padding: 0 36px;
+    font-size: var(--font-size-big);
+  }
 }

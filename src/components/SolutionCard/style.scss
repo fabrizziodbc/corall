@@ -5,13 +5,27 @@
   justify-content: center;
   min-height: 180px;
   margin: 16px;
+  
+}
+.card__container-b {
+ height: 240px;
+ background-color: rgba(204, 204, 204, 0.377);
+ padding: 0 4px;
+ border-radius: 15%;
 }
 .card__description {
   width: 240px;
   text-align: center;
   margin: 8px 0;
   font-size: var(--font-size-input);
-  font-weight: bold;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+.card__description-b {
+  width: 320px;
+  text-align: center;
+  margin: 8px 0;
+  font-size: var(--font-size-input);
 }
 .card__button {
     width: 240px;

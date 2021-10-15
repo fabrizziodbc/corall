@@ -1,5 +1,7 @@
-import { Forms } from "../../components/Forms";
-import { FindMe } from "../FindMe";
+import { Forms } from "../Forms";
+import { FindMe } from "../../containers/FindMe";
+
+
 
 const Contact = () => (
   <>
