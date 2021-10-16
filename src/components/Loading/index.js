@@ -4,10 +4,8 @@ const Loading = () => {
   const [visibility, setVisibility] = useState("show");
   useEffect(() => {
     setVisibility("show");
-    console.log("si se ve");
     setTimeout(() => {
       setVisibility("hide");
-      console.log("ya no se ve xd");
     }, 2500);
   }, []);
   return (
